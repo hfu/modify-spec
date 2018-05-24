@@ -10,16 +10,16 @@ const modify = require('./modify.js')
 
 ## define
 ```node
-// this is modify.js
-module.exports = (f) => {
+// modify.js
+module.exports = f => {
   f.tippecanoe = {minzoom: 2, maxzoom: 5, layer: 'some'}
   return f
 }
 ```
 
 ## specifications
-### If the feature shall be deleted, the modify function shall return false.
-### Otherwise, the modify function shall return the modified object.
+1. If the feature shall be deleted, the modify function shall return false.
+2. Otherwise, the modify function shall return the modified object.
 
 ## actual use of this specifications
 ### os-gpkg-vt
