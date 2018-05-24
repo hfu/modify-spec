@@ -1,17 +1,17 @@
 # modify-spec
 ## use
 ```node
-const modify = require('modify-some-data')
+const modify = require('./modify.js')
 /// ...
-  json = modify(json)
-  if(json) console.log(json)
+  f = modify(f)
+  if (f) console.log(f)
 /// ...
 ```
 
 ## define
 ```node
-// this is modify-some-data.js
-module.exports = function(f) {
+// this is modify.js
+module.exports = (f) => {
   f.tippecanoe = {minzoom: 2, maxzoom: 5, layer: 'some'}
   return f
 }
@@ -22,4 +22,5 @@ module.exports = function(f) {
 ### Otherwise, the modify function shall return the modified object.
 
 ## actual use of this specifications
-FIXME
+### os-gpkg-vt
+[modify.js](https://github.com/hfu/os-gpkg-vt/blob/master/modify.js) works for [index.js](https://github.com/hfu/os-gpkg-vt/blob/master/index.js).
