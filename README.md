@@ -24,3 +24,6 @@ module.exports = f => {
 ## actual use of this specifications
 ### os-gpkg-vt
 [modify.js](https://github.com/hfu/os-gpkg-vt/blob/master/modify.js) works for [index.js](https://github.com/hfu/os-gpkg-vt/blob/master/index.js).
+
+### pnd
+[pnd](https://github.com/hfu/pnd/) was renovated to use modify-spec. 
